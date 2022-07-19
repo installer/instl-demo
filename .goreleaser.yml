@@ -12,25 +12,16 @@ builds:
       - linux
       - darwin
       - windows
-      - freebsd
-      - netbsd
-      - openbsd
     goarch:
-      - 386
       - "386"
       - amd64
       - arm
       - arm64
-      - ppc64
-      - ppc64le
-      - mips
-      - mipsle
-      - mips64
     mod_timestamp: '{{ .CommitTimestamp }}'
     flags:
       - -trimpath
     ldflags:
-      - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }} -X main.builtBy=pterm
+      - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }} -X main.builtBy=goreleaser
 checksum:
   name_template: '{{ .ProjectName }}_checksums.txt'
 changelog:
