@@ -7,19 +7,19 @@ This repo is used to test installations via [instl](https://github.com/installer
 ### Windows
 
 ```
-http://127.0.0.1/installer/instl/win
+iwr 127.0.0.1/installer/instl/windows | iex
 ```
 
 ### Linux
 
 ```
-http://127.0.0.1/installer/instl/linux
+curl -sSL 127.0.0.1/username/reponame/linux | bash
 ```
 
 ### macOS
 
 ```
-http://127.0.0.1//installer/instl/macos
+curl -sSL 127.0.1/installer/instl/macos | bash
 ```
 
 ## Production
@@ -27,17 +27,17 @@ http://127.0.0.1//installer/instl/macos
 ### Windows
 
 ```
-https://instl.sh/installer/instl/win
+iwr instl.sh/installer/instl/windows | iex
 ```
 
 ### Linux
 
 ```
-https://instl.sh/installer/instl/linux
+curl -sSL instl.sh/username/reponame/linux | bash
 ```
 
 ### macOS
 
 ```
-https://instl.sh/installer/instl/macos
+curl -sSL instl.sh/installer/instl/macos | bash
 ```
