@@ -1,1 +1,1 @@
-module github.com/installer/test-repo
+module github.com/installer/instl-demo
